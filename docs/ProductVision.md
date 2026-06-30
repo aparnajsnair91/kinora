@@ -1,6 +1,6 @@
 # Kinora Product Vision
 
-**Version:** 0.1
+**Version:** 0.2
 
 **Status:** Draft
 
@@ -31,6 +31,7 @@ When using Kinora, families should feel that:
 
 * Mobile-first experience.
 * Simple and intuitive for every family member.
+* If a feature cannot be explained to a non-technical family member in under one minute, it's probably too complicated for the MVP.
 * Modular architecture that grows over time.
 * Privacy and security by design.
 * Solve real family problems before adding advanced features.
