@@ -1,0 +1,52 @@
+🚀 Sprint 1 – Foundation
+
+I propose we officially start Sprint 1 today.
+
+Sprint Goal
+
+By the end of Sprint 1, a user can create an account, create a family, create an event, and view the event dashboard.
+
+Today's Meeting Agenda
+Step 1 – Technology Decision (Highest Priority)
+
+This is the last major strategic decision before coding.
+
+We'll evaluate:
+
+Frontend
+Backend
+Database
+Authentication
+Hosting
+Deployment
+Development workflow
+
+This won't be "What's the most popular framework?"
+
+It will be "What's the best fit for Kinora and for your growth as a software engineer?"
+
+Step 2 – Create GitHub Issues
+
+We'll break Sprint 1 into small, manageable issues.
+
+For example:
+
+Sprint 1
+├── #1 Project Setup
+├── #2 Authentication
+├── #3 Family Management
+├── #4 Event Management
+├── #5 Event Dashboard
+├── #6 Deploy First Version
+
+Each issue should be completable in a day or two.
+
+Step 3 – Start Coding
+
+By the end of today's session, I'd like us to have:
+
+The project structure created.
+The first development environment running locally.
+A successful first commit.
+
+Even if all it does is display a simple home page, that's a huge milestone.
