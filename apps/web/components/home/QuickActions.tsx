@@ -40,7 +40,7 @@ const actions = [
 
 export default function QuickActions() {
   return (
-    <section className="mt-8">
+    <section className="mt-4">
       <h2 className="mb-2 text-xl font-semibold text-gray-900">
         Plan Your Event
       </h2>

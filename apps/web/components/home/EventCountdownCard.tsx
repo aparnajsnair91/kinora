@@ -8,7 +8,7 @@ export default function EventCountdownCard({
   daysRemaining,
 }: EventCountdownCardProps) {
   return (
-    <section className="rounded-xl border p-5 shadow-sm">
+    <section className="rounded-xl border p-3 shadow-sm">
       <p className="text-sm font-medium uppercase tracking-wide text-gray-700">
         Current Event
       </p>
@@ -17,7 +17,7 @@ export default function EventCountdownCard({
         💍 {eventName}
       </h2>
 
-      <p className="mt-1 text-center text-gray-700">
+      <p className="mt-1 text-gray-700">
         🎉 {daysRemaining} Days Remaining
       </p>
 
