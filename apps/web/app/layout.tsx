@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -42,6 +43,10 @@ export default function RootLayout({
         <main className="mx-auto flex-1 w-full max-w-5xl p-6">
           {children}
         </main>
+        <Toaster
+            position="top-right"
+            richColors
+        />
       </body>
     </html>
   );

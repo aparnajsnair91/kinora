@@ -1,10 +1,27 @@
 'use client'
 
+import { toast } from "sonner";
+import EventList from "@/components/events/EventList";
+import EventForm from "@/components/events/EventForm";
 import { useState } from "react";
 import PageHeader from "@/components/common/PageHeader";
 
+type FamilyEvent = {
+  name: string;
+  type: string;
+  date: string;
+  status: string;
+};
+
 export default function EventsPage() {
     const [showForm, setShowForm] = useState(false);
+    const [events, setEvents] = useState<FamilyEvent[]>([]);
+
+    const handleAddEvent = (newEvent: FamilyEvent) => {
+      setEvents((previousEvents) => [...previousEvents, newEvent]);
+      setShowForm(false);
+      toast.success(`${newEvent.name} added successfully! 🎉`);
+    };
 
   return (
     <>
@@ -13,27 +30,17 @@ export default function EventsPage() {
         title="Events"
         description="Manage your family events here."
       />
+
       <button
         onClick={() => setShowForm(!showForm)}
         className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
       >
-        {showForm && (
-          <div className="mt-6 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold text-gray-900">
-              Add Event
-            </h2>
-
-            <p className="mt-2 text-gray-600">
-              Event form will be built here.
-            </p>
-          </div>
-        )}
-          {showForm ? "Cancel" : "+ Add Event"}
+        {showForm ? "Cancel" : "+ Add Event"}
       </button>
 
-      <p className="mt-4">
-        Form Visible: {showForm ? "Yes" : "No"}
-      </p>
+      {showForm && <EventForm onSave={handleAddEvent} />}
+
+      <EventList events={events} />
     </>  
   );
 }
